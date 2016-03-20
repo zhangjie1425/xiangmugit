@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:minWidth="280dip"
+	android:orientation="vertical">
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="保存为文字"
+		android:layout_width="match_parent"
+		android:id="@+id/dhk_bj_bcwz"
+		android:background="@drawable/dhk_annui"
+		android:textColor="@color/colorDukAnText"
+		android:layout_marginBottom="1dp"
+		android:textSize="18sp"
+		android:padding="15dp"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="保存为图片"
+		android:layout_width="match_parent"
+		android:id="@+id/dhk_bj_bctp"
+		android:textColor="@color/colorDukAnText"
+		android:textSize="18sp"
+		android:layout_marginBottom="1dp"
+		android:padding="15dp"
+		android:background="@drawable/dhk_annui"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="保存为文字和图片"
+		android:layout_width="match_parent"
+		android:id="@+id/dhk_bj_bcwzhtp"
+		android:textColor="@color/colorDukAnText"
+		android:textSize="18sp"
+		android:padding="15dp"
+		android:background="@drawable/dhk_annui"
+		android:layout_marginBottom="1dp"/>
+
+</LinearLayout>
+

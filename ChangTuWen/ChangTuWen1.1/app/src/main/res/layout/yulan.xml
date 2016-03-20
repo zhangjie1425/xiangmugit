@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorDhlBg">
+    <RelativeLayout
+        android:layout_height="45dp"
+        android:background="@color/colorDhlBg"
+        android:layout_width="match_parent">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/yulan_fhtp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:onClick="zc_fh"
+            android:background="@drawable/fanhuian"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/yulan_fh"
+            android:textColor="@color/colorDhlText"
+            android:textSize="16.0sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/yulan_fhtp"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/colorDhlText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="预览"
+            android:id="@+id/yulanbt"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/yulan_fx"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/fenxaingan"/>
+        <!--<TextView
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/bianji_ok"
+            android:textColor="@color/colorDhlText"
+            android:textSize="16.0sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>-->
+    </RelativeLayout>
+
+   <!-- <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorUiBg"
+        android:id="@+id/yulanscr">
+    </ScrollView>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorFxZtBg"
+        android:layout_height="match_parent">
+    <!--<ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/colorUiBg"
+        android:id="@+id/yulanscr"
+        android:layout_margin="10dp"
+        android:layout_weight="1.0">-->
+        <com.youxianwubian.wenpian.ylview.LargeImageView
+            android:layout_margin="10dp"
+            android:layout_weight="1.0"
+            android:id="@+id/iv_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    <!--<ImageView
+           android:background="@color/colorUiBg"
+           android:id="@+id/yulanyl"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />-->
+   <!-- </ScrollView>-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="保存到相册"
+            android:background="@drawable/menuan"
+            android:textSize="15dp"
+            android:textColor="@color/colorBjText"
+            android:id="@+id/ylbaocun"/>
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF">
+
+            <RelativeLayout
+                android:id="@+id/qqkj"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/add"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="qq空间"
+                        android:textColor="@color/colorFxZtText"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pengyouq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/add"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="朋友圈"
+                        android:textColor="@color/colorFxZtText"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/weibo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/add"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="微博"
+                        android:textColor="@color/colorFxZtText"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/baocunxc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/add"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="保存到相册"
+                        android:textColor="@color/colorFxZtText"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+-->
+
+
+    </LinearLayout>
+</LinearLayout>

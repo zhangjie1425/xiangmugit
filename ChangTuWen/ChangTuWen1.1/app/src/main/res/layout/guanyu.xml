@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imglistview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorDhlBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="45dp"
+        android:background="@color/colorDhlBg"
+        android:layout_width="match_parent">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/guanyu_fhtp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/fanhuian"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:id="@+id/guanyu_fh"
+            android:textColor="@color/colorDhlText"
+            android:textSize="16.0sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/guanyu_fhtp"
+            android:layout_margin="2dp"/>
+        <TextView
+            android:textSize="16.0sp"
+            android:textColor="@color/colorDhlText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="关于"
+            android:id="@+id/guanyu_bt"/>
+
+
+        <!--<TextView
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:id="@+id/bianji_ok"
+            android:textColor="@color/colorDhlText"
+            android:textSize="16.0sp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>-->
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorUiBg">
+    <com.youxianwubian.wenpian.layout.ImgListView
+        android:id="@+id/xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffff"
+        android:dividerHeight="0dp"
+        android:fadingEdgeLength="0dp"
+        android:padding="0dp"
+        imglistview:headimage="@mipmap/guanyuzj" />
+    <!--
+    imglistview:ImgListView="@drawable/top_img"属性可以设置头部图片
+    若需要在代码中设置，则将该属性删除
+    -->
+
+    </LinearLayout>
+</LinearLayout>
