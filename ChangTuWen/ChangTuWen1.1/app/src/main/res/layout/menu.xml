@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="200dp"
+	android:layout_height="fill_parent"
+	>
+
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@mipmap/cbeijng"
+		android:scaleType="centerCrop"
+		/>
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerInParent="true">
+
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:background="@drawable/menuan"
+			android:layout_height="wrap_content"
+			android:id="@+id/menu_wz">
+
+			<ImageView
+				android:id="@+id/idmenubj"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="20dp"
+				android:src="@mipmap/wztpb"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_toRightOf="@id/idmenubj"
+				android:text="文字"
+				android:textColor="@color/colorMenuAnText"
+				android:textSize="20sp"/>
+
+		</RelativeLayout>
+
+		
+
+
+		
+	<RelativeLayout
+			android:layout_width="wrap_content"
+			android:id="@+id/menu_sz"
+			android:layout_height="wrap_content"
+			android:background="@drawable/menuan"
+			>
+
+			<ImageView
+				android:id="@+id/idmenusz"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="20dp"
+				android:src="@mipmap/shezhitpb"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_toRightOf="@id/idmenusz"
+				android:text="设置"
+				android:textColor="@color/colorMenuAnText"
+				android:textSize="20sp"/>
+
+		</RelativeLayout>
+		<!--<View
+			android:layout_height="1dp"
+			android:background="@color/colorMenuView"
+			android:layout_width="match_parent"/>-->
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:id="@+id/menu_fx"
+			android:layout_height="wrap_content"
+			android:background="@drawable/menuan"
+			>
+
+			<ImageView
+				android:id="@+id/idmenufx"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="20dp"
+				android:src="@mipmap/fenxiangtp"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_toRightOf="@id/idmenufx"
+				android:text="评分"
+				android:textColor="@color/colorMenuAnText"
+				android:textSize="20sp"/>
+
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			
+			android:id="@+id/menu_gy"
+			android:layout_height="wrap_content"
+			android:background="@drawable/menuan"
+			>
+
+			<ImageView
+				android:id="@+id/idmenugy"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_marginTop="20dp"
+				android:src="@mipmap/guanyutp"/>
+
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="20dp"
+				android:layout_toRightOf="@id/idmenugy"
+				android:text="关于"
+				android:textColor="@color/colorMenuAnText"
+				android:textSize="20sp"/>
+
+		</RelativeLayout>
+		
+
+	</LinearLayout>
+
+</RelativeLayout>
+
